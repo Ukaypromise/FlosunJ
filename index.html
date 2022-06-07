@@ -9,11 +9,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <script defer src="./main.js"></script>
     <title>FlosunJ Limited</title>
   </head>
   <body>
     <!-- Navigation -->
     <nav>
+      <div class="top-nav">
+        <div class="email-phone">
+          <a href="#"
+            ><i class="fa fa-envelope" aria-hidden="true"></i> flosunj@gmail.com
+          </a>
+          <a href="#"
+            ><i class="fa fa-phone-square" aria-hidden="true"></i> +234 - 080 -
+            888 - 8888
+          </a>
+        </div>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
@@ -37,20 +67,7 @@
             <a href="#">Gallery</a>
           </li>
         </ul>
-        <!-- social media -->
         <a class="contact-us" href="">Contact</a>
-        <ul class="social-icons">
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
       </div>
     </nav>
     <!-- Image Slider -->
@@ -81,11 +98,18 @@
             temporibus atque molestiae dolor iure, accusamus eaque cupiditate ut
             officia! Consectetur facilis accusamus vitae harum.
           </p>
-          <button type="button"><span></span> Read More</button>
+          <button class="info-btn" type="button">
+            <span></span> Read More
+          </button>
         </div>
       </div>
+      <!-- Company photo Grid -->
     </section>
-
-    <script defer src="./main.js"></script>
+    <section class="photo-grid-container">
+      <img src="./images/image_2.jpg" alt="flosunj" class="photo-img" />
+      <img src="./images/image_2.jpg" alt="flosunj" class="photo-img" />
+      <img src="./images/image_2.jpg" alt="flosunj" class="photo-img" />
+      <img src="./images/image_2.jpg" alt="flosunj" class="photo-img" />
+    </section>
   </body>
 </html>

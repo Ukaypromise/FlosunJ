@@ -86,13 +86,39 @@ nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
+/*
+Top-Navbar
+*/
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8rem;
+  height: 3rem;
+  background-color: var(--clr-black);
+}
+.email-phone a {
+  margin-right: 1rem;
+  color: var(--clr-white);
+  text-align: center;
+  cursor: pointer;
+}
 
+.email-phone a:hover {
+  color: var(--clr-primary-5);
+}
+/*
+Main-Navbar
+*/
 .nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
   overflow: hidden;
+}
+.nav-center li {
+  margin-right: 3rem;
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -123,9 +149,7 @@ nav {
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
 }
-.social-icons {
-  display: none;
-}
+
 .links {
   height: 0;
   overflow: hidden;
@@ -134,17 +158,7 @@ nav {
 .show-links {
   height: 10rem;
 }
-.social-icons {
-  display: none;
-}
-.links {
-  height: 0;
-  overflow: hidden;
-  transition: var(--transition);
-}
-.show-links {
-  height: 10rem;
-}
+
 .contact-us {
   display: inline-block;
   text-decoration: none;
@@ -165,8 +179,11 @@ nav {
   .contact-us {
     display: none;
   }
+  .top-nav {
+    display: none;
+  }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
@@ -267,7 +284,7 @@ h1 {
 .contact-primary:hover {
   background: var(--clr-primary-5);
 }
-.fa {
+.text-content .fa {
   font-size: 2rem;
   color: var(--clr-white);
   transition: var(--transition);
@@ -322,16 +339,20 @@ First Section
   letter-spacing: var(--spacing);
   margin-right: 3rem;
 }
-button {
+.info-btn {
   width: 100px;
   padding: 10px 0;
   text-align: center;
   margin: 10px 5px;
   border-radius: 10px;
   font-weight: bold;
-  border: 2px solid var(--clr-primary-5);
+  border: 0px solid var(--clr-primary-5);
   background-color: var(--clr-primary-5);
   cursor: pointer;
+  color: var(--clr-white);
+}
+.info-btn:hover {
+  background-color: var(--clr-primary-7);
   color: var(--clr-white);
 }
 @media screen and (max-width: 700px) {
@@ -345,4 +366,24 @@ button {
     text-align: center;
     margin-right: 0;
   }
+  .info p {
+    line-height: 1rem;
+  }
+}
+
+/*
+=============== 
+Company photo Grid
+===============
+*/
+.photo-grid-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+.photo-img {
+  margin: 2rem 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
