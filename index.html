@@ -5,21 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>FlosunJ Limited</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="nav-container">
-      <nav class="navbar">
-        <img src="./images/flosunj_logo.svg" alt="" />
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Services</a></li>
-          <li><a href="contact.html">Gallery</a></li>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo-main.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
+          </li>
         </ul>
-        <button class="btn btn-primary">Contact Us</button>
-      </nav>
-    </div>
+        <!-- social media -->
+        <a class="contact-us" href="">Contact</a>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Image Slider -->
+    <section>
+      <div class="slider-container">
+        <div class="slide">
+          <img src="./images/image_3.jpg" class="slide-img" alt="" />
+          <div class="text-content">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <h1>
+              We play a vital role <br />
+              in the Oil and gas industry
+            </h1>
+            <a class="contact-primary" href="">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info-container">
+      <div class="info">
+        <h2>One of the biggest supplier in the country</h2>
+        <div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repudiandae rem perspiciatis excepturi deleniti libero nihil fugit
+            nostrum ad quidem recusandae numquam, pariatur earum optio amet
+            temporibus atque molestiae dolor iure, accusamus eaque cupiditate ut
+            officia! Consectetur facilis accusamus vitae harum.
+          </p>
+          <button type="button"><span></span> Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <script defer src="./main.js"></script>
   </body>
 </html>
