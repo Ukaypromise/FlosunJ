@@ -86,11 +86,13 @@ nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
+
 .nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  overflow: hidden;
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -211,7 +213,6 @@ Slider
 */
 
 .slider-container {
-  width: 100vw;
   margin: 0 auto;
   height: 70vh;
   position: relative;
@@ -296,18 +297,22 @@ h1 {
 First Section
 ===============
 */
-
 .info-container {
   display: grid;
   place-items: center;
 }
-
 .info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   margin: 3rem auto;
+}
+.info p {
+  font-weight: 500;
+  color: var(--clr-grey-3);
+  letter-spacing: var(--spacing);
+  line-height: 2rem;
 }
 .info h2 {
   font-size: 2rem;
@@ -319,7 +324,7 @@ First Section
 }
 button {
   width: 100px;
-  padding: 15px 0;
+  padding: 10px 0;
   text-align: center;
   margin: 10px 5px;
   border-radius: 10px;
