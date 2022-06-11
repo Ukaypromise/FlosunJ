@@ -47,8 +47,8 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  /* text-transform: capitalize;
-  line-height: 1.25; */
+  --text-transform: capitalize;
+  --line-height: 1.25;
 }
 /*
 =============== 
@@ -325,8 +325,7 @@ First Section
   place-items: center;
   margin: 3rem auto;
 }
-.info p {
-  font-weight: 500;
+.info p {  
   color: var(--clr-grey-3);
   letter-spacing: var(--spacing);
   line-height: 2rem;
@@ -367,23 +366,37 @@ First Section
     margin-right: 0;
   }
   .info p {
-    line-height: 1rem;
+    line-height: 1.2rem;
   }
 }
 
 /*
 =============== 
-Company photo Grid
+Second ection-Company photo Grid
 ===============
 */
 .photo-grid-container {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
+/* .img-container{
+  border: 1px solid var(--clr-primary-5);
+  width:300px;
+  height:300px;  
+  margin: 1em;
+} */
 .photo-img {
-  margin: 2rem 0;
+  margin: 1em;
   width: 300px;
   height: 300px;
+  border-radius: 3em;
   object-fit: cover;
+}
+@media screen and (max-width: 700px) {
+  .photo-grid-container {
+    flex-direction: column;
+  }
+  
 }
